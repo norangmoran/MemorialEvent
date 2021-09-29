@@ -1,0 +1,67 @@
+https://www.notion.so/1-aa51b2b497494008bf9a436730e0da6a#9f58bc49fa494120a57ef3233e7df518
+비쥬얼 스튜디오 설치
+폴더 만들고 안에 사진 옮겨두기
+네이버지도로 해당 장소 찾아 주소 복붙
+구글지도로 해당 장소 주소를 붙여넣고 지도 안에 나타난 붉은 표식을 오른클릭, 맨 윗줄 좌표 숫자를 클릭하면 좌표 복사됨, 복붙
+
+
+
+prac.html파일 만들고
+첫줄에 html:5 치고 Enter -> 그럼 자동으로 기본문구 작성됨
+HTML 정리해둔 코드 스니펫
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스파르타코딩클럽 | HTML 기초</title>
+</head>
+
+<body>
+    <!-- 구역을 나누는 태그들 -->
+    <div>나는 구역을 나누죠</div>
+    <p>나는 문단이에요</p>
+    <ul>
+        <li> bullet point!1 </li>
+        <li> bullet point!2 </li>
+    </ul>
+
+    <!-- 구역 내 콘텐츠 태그들 -->
+    <h1>h1은 제목을 나타내는 태그입니다. 페이지마다 하나씩 꼭 써주는 게 좋아요. 그래야 구글 검색이 잘 되거든요.</h1>
+    <h2>h2는 소제목입니다.</h2>
+    <h3>h3~h6도 각자의 역할이 있죠. 비중은 작지만..</h3>
+    <hr>
+    a 태그입니다: <a href="http://google.com/" target="_blank">하이퍼링크</a>
+    <hr>
+    img 태그입니다: <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+    <hr>
+    input 태그입니다: <input type="text" />
+    <hr>
+    button 태그입니다: <button> 버튼입니다</button>
+    <hr>
+    textarea 태그입니다: <textarea></textarea>
+</body>
+</html>
+
+Ctrl+k+f 선택영역 자동으로 정렬 맞춰줌
+
+헤더 안에 <style></style>로 css스타일 지정이 가능함
+스타일 지정해줄 명령자? ex.h1 을 써주고 {}안에 스타일 내용 써줌
+div도 마찬가지인데 div를 특정해줄 땐 그 <div class="특정짓기위한 이름">을 써주고
+.특정짓기위한 이름{} 여기에 스타일을 지정해줌
+공간 설정시 스타일은 width=너비 숫자px;  height=높이 숫자px;
+display: flex;
+flex-direction: column; 첫번째 구역이랑 두번째 구역이 세로로 붙음 row; 가로로 붙음
+align-items:center;
+
+첫번째 구역이랑 두번째 구역 사이에 간격을 주고싶음.
+margin-right: 30px; 오른쪽으로 간격 30픽셀 떨어져있습니다~
+
+
+
+만들기 전에 구역을 나눠보자
+1구역에 타이틀 h1, 하이퍼링크 a
+2구역은 2개로 또 나눠서
+2-1엔 지도 2-2엔 사진, 소재목 h2, 주소 h3, 본문 p
+

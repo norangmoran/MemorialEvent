@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라니라니의 추억</title>
+    <style>
+        .mytitle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 30px;
+        }
+        .btn{
+            width: 300px;
+            height: 40px;
+
+            border: 2px solid #e8344e;
+            /* 박스를 그려줄 것이다 두께는 2px이고 실선(solid) */
+            border-radius: 40px; /*박스 모서리 둥글게*/
+
+            text-decoration: none; /*자동으로 들어가있는 걸 none으로*/
+            text-align: center; /*텍스트 가운데 정렬*/
+
+            line-height: 40px; /*글자 한 줄의 높이. 이걸 height와 같게 써주면 자동 중앙정렬*/
+
+            color: #e8344e;
+            font-weight: bold; /*글자 굵게*/
+        }
+        .btn:hover{ /*마우스가 올라갔을 때에 스타일*/
+            background-color: #e8344e;
+            color: white;
+        }
+        .box{
+            width:1000px;
+
+            border: 2px solid black;
+            border-radius: 5px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin: 40px auto 0px auto; /*위 오른쪽 아래 왼쪽 순으로 한번에 작성*/
+        }
+        .map{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+
+            margin-right: 30px;
+        }
+        .story{
+            width: 450px;
+            height: 500px;
+            background-color: blue;
+        }
+        .img{
+            width: 450px;
+            height: 300px;
+
+            background-image: url('image.jpg');
+            background-position: center;
+            background-size: cover;
+
+            border-radius: 24px;
+        }
+        .story > h2{ /*story클래스 안의 h2로 특정지어줌*/
+            margin: 20px 0px 0px 0px; /*먼저 0을 다 넣어주고 화면 보면서 숫자 조정*/
+            color: green;
+        }
+        .story > h3{
+            margin: 5px 0px 0px 0px; /*먼저 0을 다 넣어주고 화면 보면서 숫자 조정*/
+            font-size: 16px;
+            color: gray;
+            font-weight: normal; /*폰트에 굵은기 빼주기*/
+        }
+        .story > p{
+            line-height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mytitle">
+        <h1>나의 추억거리를 공유합니다.</h1>
+        <a class="btn" href="http://spartacodingclub.shop/free/202105/exhibition" target="_blank">모든 수강생들의 추억 보러가기 ></a>
+    </div>
+    <div class="box">
+        <div class="map"></div>
+        <div class="story">
+            <div class="img"></div>
+            <h2>미스사이공 안산점</h2>
+            <h3>경기 안산시 단원구 예술대학로 17</h3>
+            <p>
+                오랜만에 쌀국숫집에 사람이 적길래 들어갔다.
+                근데 주문하려다가 바로 뒷 사람이 따라들어와서 당황했다.
+                그냥 기본 먹어야지 하고 주문했는데... 알고보니 곱배기였다;;
+                근데 그걸 다 먹음... 곱배기를 다 먹다니 진짜 난생 처음이었다.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
